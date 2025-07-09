@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
 import img from "../assets/download.png";
 
-const hero = () => {
+const Hero = () => {
+  const typedRef = useRef(null);
+  const typedInstance = useRef(null);
+
+  useEffect(() => {
+    typedInstance.current = new Typed(typedRef.current, {
+      strings: [
+        "MERN Stack Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      loop: true
+    });
+
+    return () => {
+      typedInstance.current.destroy();
+    };
+  }, []);
+
   return (
     <div
       id="home"
@@ -9,12 +32,14 @@ const hero = () => {
     >
       {/* Left Side */}
       <div className="lg:w-1/2">
-        <h2 className="text-2xl sm:text-3xl text-gray-400">Hey There, 👋 I'm</h2>
+        <h2 className="text-2xl sm:text-3xl text-gray-400">
+          Hey There, 👋 I'm
+        </h2>
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mt-2">
           Anuj Gour
         </h1>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl text-white mt-2">
-          MERN Stack Developer
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl text-white mt-2 h-[60px]">
+          <span ref={typedRef}></span>
         </h1>
         <p className="text-gray-400 mt-4 text-base sm:text-lg">
           I design beautiful simple things, <br className="hidden sm:block" />
@@ -24,7 +49,6 @@ const hero = () => {
         <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
           <a
             href="https://www.canva.com/design/DAGary-O6vs/KEDHlPkP3USwMNlxHusv6w/view?utm_content=DAGary-O6vs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf95e643f45"
-            // download="Anuj_Gour.pdf"
             className="hover:bg-white hover:text-black border-2 transition-transform duration-300 px-6 py-2 rounded-lg font-semibold hover:scale-105"
           >
             Resume
@@ -50,4 +74,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;

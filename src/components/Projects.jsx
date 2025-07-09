@@ -2,17 +2,12 @@ import React from "react";
 
 const projects = [
   {
-    title: "GYM UI",
+    title: "Green Cart",
     description: "Developed a modern, responsive gym website using HTML, CSS, and JavaScript.Created structured sections for services, membership plans, trainers, and testimonials.Applied fitness-themed styling, animations, and mobile optimization",
     // image: "https://example.com/task-management.png",
-    url: "https://cute-gym-42dfb2.netlify.app/",
+    url: "https://greencart-uuia-8nhzzbyjb-agcode18s-projects.vercel.app/",
   },
-  {
-    title: "AI CHAT BOT",
-    description:"Built an interactive AI chatbot using JavaScript, HTML, and CSS.Implemented real-time messaging and AI-powered responses.Designed a responsive interface with animations and smooth U",
-    // image: "https://example.com/task-management.png",
-    url: "https://courageous-pixie-d3f6a7.netlify.app/.",
-  },
+ 
   {
     title: "Travel Web",
     description: "I developed a Travel Bug website using HTML, CSS, and JavaScript, incorporating smooth animations to create a visually immersive, interactive, and engaging user experience throughout the site.",
