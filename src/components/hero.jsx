@@ -50,10 +50,11 @@ const Hero = () => {
           <a
             href="https://www.canva.com/design/DAGary-O6vs/KEDHlPkP3USwMNlxHusv6w/view?utm_content=DAGary-O6vs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf95e643f45"
             className="hover:bg-white hover:text-black border-2 transition-transform duration-300 px-6 py-2 rounded-lg font-semibold hover:scale-105"
+            target="_blank"
           >
             Resume
           </a>
-          <a
+          <a  
             href="#contact"
             className="hover:bg-white hover:text-black border-2 transition-transform duration-300 px-6 py-2 rounded-lg font-semibold hover:scale-105"
           >
