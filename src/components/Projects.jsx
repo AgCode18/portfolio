@@ -5,7 +5,7 @@ const projects = [
     title: "Green Cart",
     description: "Developed a modern, responsive gym website using HTML, CSS, and JavaScript.Created structured sections for services, membership plans, trainers, and testimonials.Applied fitness-themed styling, animations, and mobile optimization",
     // image: "https://example.com/task-management.png",
-    url: "https://greencart-uuia-8nhzzbyjb-agcode18s-projects.vercel.app/",
+    url: "https://greencart-green-beta.vercel.app/",
   },
  
   {
